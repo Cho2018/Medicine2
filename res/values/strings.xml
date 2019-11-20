@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">띵띵이</string>
+    <string name="channel_description">DDingDDing push notification</string>
+    <string name="channel_name">ddingdding</string>
+</resources>

@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#0288d1</item>
+        <item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@dimen/dialog_min_width_minor</item>
+        <item name="android:height">80dp</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#0288d1</item>
+    </style>
+
+    <style name="calendarStyle">
+        <item name="colorAccent">#0288d1</item>
+    </style>
+
+    <string name="italic"> <i> 약 복용 이후 변화 사항을 입력하세요 </i></string>
+    <string name="italic2"> <i> 버튼을 눌러\n시작 날짜를 정해주세요 </i></string>
+    <string name="italic3"> <i> 버튼을 눌러\n종료 날짜를 정해주세요 </i></string>
+    <string name="italic4"> <i> 복용할 약이 없습니다 </i></string>
+
+</resources>

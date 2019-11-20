@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar_inside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_inside"
+            layout="@layout/toolbar_inside_schedule">
+
+        </include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_toolbar_inside"
+        android:layout_marginTop="-3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/listImage"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:srcCompat="@drawable/list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/listImage"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/listImage"
+                        android:text="목록"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_border_fill3" tools:layout_editor_absoluteY="75dp">
+
+                    <TextView
+                        android:id="@+id/txtV4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fadeScrollbars="false"
+                        android:padding="20dp"
+                        android:hint="@string/italic4"
+                        android:scrollbars="vertical"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"/>
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <ImageView
+                    android:id="@+id/btn_left"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/left" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btn_right"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:paddingRight="20dp"
+                        android:src="@drawable/right"
+                        android:layout_gravity="right"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:id="@+id/memoImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/memo"
+                            android:layout_marginLeft="30dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/memoImage"
+                            android:id="@+id/t1"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@id/memoImage"
+                            android:text="메모"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/t1"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/btn1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:text="저장하기"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                app:layout_constraintEnd_toStartOf="@+id/btn4" />
+
+                            <TextView
+                                android:id="@+id/btn3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:text="수정하기"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                android:visibility="invisible"
+                                app:layout_constraintEnd_toStartOf="@+id/btn4" />
+
+                            <TextView
+                                android:id="@+id/btn4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_toRightOf="@id/btn1"
+                                android:text="삭제하기"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/memoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/primary_border_fill6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <EditText
+                            android:id="@+id/edt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="@string/italic"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:privateImeOptions="defaultInputmode=korean"
+                            android:scrollHorizontally="false"
+                            android:visibility="visible"
+                            tools:layout_editor_absoluteY="690dp" />
+
+                        <TextView
+                            android:id="@+id/txtV2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadeScrollbars="false"
+                            android:inputType="textMultiLine"
+                            android:padding="20dp"
+                            android:scrollbars="vertical"
+                            android:text="TextView"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:visibility="invisible"
+                            tools:layout_editor_absoluteY="690dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
